@@ -80,7 +80,7 @@ const Header = () => {
     <header>
       <div className="logo">
         <a href="/">
-          <h1>MedVoxel</h1>
+          <h1>MedVoxel</h1> 
         </a>
       </div>
       <div className="nav-container">
