@@ -467,6 +467,134 @@ const Trombosis = () => {
                             </p>
                         </div>
                     </section>
+
+                    <section className="trombosis-section">
+                        <h2 className="section-title">🌟 HÁBITOS SALUDABLES PARA PREVENIR LA TROMBOSIS</h2>
+                        <p className="section-content">
+                            Adoptar un estilo de vida saludable es clave para prevenir la trombosis. Los hábitos más efectivos incluyen ejercicio regular, una dieta balanceada, control del peso, dejar de fumar, mantenerse hidratado, realizar chequeos médicos regulares y evitar la inmovilidad prolongada.
+                        </p>
+
+                        <div className="healthy-habits-container">
+                            <div className="habit-card exercise">
+                                <h3><span className="habit-emoji">🏃‍♂️</span>1. Ejercicio Regular</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Realizar actividad física moderada durante al menos 150 minutos a la semana.</li>
+                                    <li>Evitar la inmovilidad prolongada, especialmente durante viajes largos o cuando se pasa mucho tiempo sentado.</li>
+                                    <li>Incorporar ejercicios que fomenten la circulación sanguínea.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Caminar:</strong> Realizar caminatas diarias de al menos 30 minutos. La caminata mejora la circulación sanguínea en las piernas y previene la estasis.</li>
+                                    <li><strong>Estiramientos y movilidad:</strong> Realizar estiramientos cada 1-2 horas si estás mucho tiempo sentado. Mover los tobillos, estirar las piernas y hacer movimientos circulares mejora el flujo sanguíneo.</li>
+                                    <li><strong>Ejercicio aeróbico:</strong> Correr, nadar, andar en bicicleta o practicar deportes que aumenten el ritmo cardíaco, lo que mejora la circulación y previene el riesgo de trombosis.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card diet">
+                                <h3><span className="habit-emoji">🥗</span>2. Dieta Saludable</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Mantener una dieta equilibrada, baja en grasas saturadas, sal y azúcares refinados.</li>
+                                    <li>Incorporar alimentos ricos en omega-3, fibra y antioxidantes.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Comer alimentos ricos en ácidos grasos omega-3:</strong> El salmón, las sardinas, las nueces y las semillas de chía favorecen la salud cardiovascular, reduciendo la tendencia a la formación de coágulos.</li>
+                                    <li><strong>Frutas y verduras:</strong> Consumir una amplia variedad de frutas y verduras ricas en antioxidantes, vitaminas y fibra, que ayudan a mejorar la circulación y reducir el riesgo de trombosis.</li>
+                                    <li><strong>Reducir el consumo de sal:</strong> El exceso de sal puede elevar la presión arterial, lo que aumenta el riesgo de formación de coágulos.</li>
+                                    <li><strong>Evitar grasas saturadas:</strong> Las grasas saturadas elevan el colesterol malo. Optar por grasas saludables como las del aguacate, aceite de oliva y frutos secos.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card weight">
+                                <h3><span className="habit-emoji">⚖️</span>3. Control del Peso</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Mantener un peso saludable mediante una combinación de ejercicio regular y dieta balanceada.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Monitorear el índice de masa corporal (IMC):</strong> Mantener un IMC saludable (entre 18.5 y 24.9) reduce el riesgo de hipertensión, diabetes tipo 2 y enfermedades cardíacas.</li>
+                                    <li><strong>Prevenir la obesidad:</strong> La obesidad aumenta la probabilidad de sufrir de trombosis debido a la presión extra sobre las venas y el aumento de la viscosidad sanguínea.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card no-smoking">
+                                <h3><span className="habit-emoji">🚭</span>4. Evitar el Tabaco</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Dejar de fumar y evitar la exposición al humo de tabaco.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>No fumar:</strong> Fumar daña las paredes de los vasos sanguíneos y aumenta el riesgo de formación de coágulos. Dejar de fumar mejora la circulación y disminuye el riesgo de trombosis.</li>
+                                    <li><strong>Evitar el tabaco pasivo:</strong> El humo de segunda mano también afecta la salud cardiovascular, por lo que es importante evitar lugares donde se fume.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card hydration">
+                                <h3><span className="habit-emoji">💧</span>5. Mantenerse Hidratado</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Beber suficiente agua durante el día.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Beber suficiente agua:</strong> La deshidratación hace que la sangre se espese y favorezca la coagulación. Un consumo adecuado de agua mantiene la viscosidad sanguínea en niveles normales.</li>
+                                    <li><strong>Evitar bebidas deshidratantes:</strong> Limita el consumo de alcohol y cafeína, ya que son diuréticos y pueden contribuir a la deshidratación.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card medical">
+                                <h3><span className="habit-emoji">🩺</span>6. Monitorear la Salud y Consultar con el Médico</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Realizar chequeos médicos regulares, especialmente si tienes antecedentes de trombosis o factores de riesgo.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Controlar la presión arterial:</strong> Mantener la presión arterial dentro de los límites normales es crucial para prevenir la trombosis.</li>
+                                    <li><strong>Controlar el colesterol y la diabetes:</strong> Asegúrate de que tus niveles de colesterol y glucosa estén bajo control para reducir el riesgo de trombosis.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card compression">
+                                <h3><span className="habit-emoji">🧦</span>7. Usar Medias de Compresión</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Usar medias de compresión, especialmente si eres propenso a la trombosis o si tienes un trabajo que implique estar mucho tiempo de pie o sentado.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Medias de compresión:</strong> Ayudan a mejorar la circulación en las piernas y reducen el riesgo de trombosis venosa profunda (TVP). Pueden ser especialmente útiles en personas que viajan mucho, están embarazadas o tienen antecedentes de trombosis.</li>
+                                </ul>
+                            </div>
+
+                            <div className="habit-card mobility">
+                                <h3><span className="habit-emoji">🚶‍♂️</span>8. Evitar la Inmovilidad Prolongada</h3>
+                                <p className="habit-subtitle">Hábitos recomendados:</p>
+                                <ul>
+                                    <li>Realizar pausas activas si permaneces sentado durante mucho tiempo.</li>
+                                </ul>
+                                <p className="habit-subtitle">Recomendaciones:</p>
+                                <ul>
+                                    <li><strong>Pausas activas:</strong> Si viajas en avión, tren o automóvil por mucho tiempo, asegúrate de caminar o estirarte cada 1-2 horas. Esto mejora la circulación y previene la formación de coágulos.</li>
+                                    <li><strong>Ejercicios de movilidad:</strong> Realiza movimientos sencillos, como mover los pies y los tobillos o girar las piernas, para estimular el flujo sanguíneo.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="warning-box">
+                            <h3>📋 Resumen de Recomendaciones</h3>
+                            <p>
+                                <strong>Implementar estas recomendaciones en la vida diaria puede reducir significativamente el riesgo de trombosis y mejorar la salud cardiovascular en general.</strong>
+                            </p>
+                            <p>
+                                <strong>Los hábitos más efectivos incluyen: ejercicio regular, dieta balanceada, control del peso, dejar de fumar, mantenerse hidratado, chequeos médicos regulares y evitar la inmovilidad prolongada.</strong>
+                            </p>
+                        </div>
+                    </section>
                 </div>
             </div>
 

@@ -100,8 +100,8 @@ h1{
 /* Añade o modifica estos estilos en tu archivo CSS */
 
 .cuadro2 {
-  min-height: 650vh; /* CAMBIAR ESTE VALOR - era 350vh, ahora 450vh para más largo */
-  padding-bottom: 8rem; /* Aumenta el espacio en la parte inferior */
+  min-height: 689vh; /* CAMBIAR ESTE VALOR - era 350vh, ahora 450vh para más largo */
+  padding-bottom: 300rem; /* Aumenta el espacio en la parte inferior */
   margin-bottom: 1rem; /* Añade más margen adicional al final */
   background-color: #FC0848; /* Color de fondo opcional */
   position: relative;
@@ -467,7 +467,7 @@ h1{
 }
 
 .warning-box strong {
-    color: #ffeb3b;
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -477,6 +477,205 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
+}
+
+/* NUEVOS ESTILOS PARA HÁBITOS SALUDABLES */
+.healthy-habits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.habit-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.habit-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: #4CAF50;
+}
+
+.habit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A, #CDDC39);
+    border-radius: 15px 15px 0 0;
+}
+
+.habit-card h3 {
+    color: #2e7d32;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.habit-card .habit-emoji {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.habit-card .habit-subtitle {
+    color: #1b5e20;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.8rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.habit-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.habit-card li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+    position: relative;
+    padding-left: 2rem;
+    color: #000000;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+.habit-card li:hover {
+    background-color: rgba(76, 175, 80, 0.05);
+    border-radius: 8px;
+    padding-left: 2.5rem;
+}
+
+.habit-card li:last-child {
+    border-bottom: none;
+}
+
+.habit-card li:before {
+    content: "✓";
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.habit-card strong {
+    color: #1b5e20;
+    font-weight: 700;
+}
+
+/* Estilos específicos para cada tipo de hábito */
+.habit-card.exercise {
+    border-left: 5px solid #FF5722;
+}
+
+.habit-card.exercise h3 {
+    color: #D84315;
+}
+
+.habit-card.exercise::before {
+    background: linear-gradient(90deg, #FF5722, #FF7043, #FFAB91);
+}
+
+.habit-card.diet {
+    border-left: 5px solid #4CAF50;
+}
+
+.habit-card.diet h3 {
+    color: #2E7D32;
+}
+
+.habit-card.diet::before {
+    background: linear-gradient(90deg, #4CAF50, #66BB6A, #A5D6A7);
+}
+
+.habit-card.weight {
+    border-left: 5px solid #2196F3;
+}
+
+.habit-card.weight h3 {
+    color: #1565C0;
+}
+
+.habit-card.weight::before {
+    background: linear-gradient(90deg, #2196F3, #42A5F5, #90CAF9);
+}
+
+.habit-card.no-smoking {
+    border-left: 5px solid #9C27B0;
+}
+
+.habit-card.no-smoking h3 {
+    color: #6A1B9A;
+}
+
+.habit-card.no-smoking::before {
+    background: linear-gradient(90deg, #9C27B0, #AB47BC, #CE93D8);
+}
+
+.habit-card.hydration {
+    border-left: 5px solid #00BCD4;
+}
+
+.habit-card.hydration h3 {
+    color: #00838F;
+}
+
+.habit-card.hydration::before {
+    background: linear-gradient(90deg, #00BCD4, #26C6DA, #80DEEA);
+}
+
+.habit-card.medical {
+    border-left: 5px solid #FF9800;
+}
+
+.habit-card.medical h3 {
+    color: #E65100;
+}
+
+.habit-card.medical::before {
+    background: linear-gradient(90deg, #FF9800, #FFA726, #FFCC02);
+}
+
+.habit-card.compression {
+    border-left: 5px solid #795548;
+}
+
+.habit-card.compression h3 {
+    color: #3E2723;
+}
+
+.habit-card.compression::before {
+    background: linear-gradient(90deg, #795548, #8D6E63, #BCAAA4);
+}
+
+.habit-card.mobility {
+    border-left: 5px solid #607D8B;
+}
+
+.habit-card.mobility h3 {
+    color: #263238;
+}
+
+.habit-card.mobility::before {
+    background: linear-gradient(90deg, #607D8B, #78909C, #B0BEC5);
 }
 
 .treatment-item {
@@ -664,7 +863,7 @@ h1{
 }
 
 .instructions-content strong {
-    color: #ffeb3b;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -742,6 +941,40 @@ h1{
     
     .treatment-item h3 {
         font-size: 1.1rem;
+    }
+    
+    /* RESPONSIVIDAD PARA HÁBITOS SALUDABLES */
+    .healthy-habits-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .habit-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .habit-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .habit-card .habit-emoji {
+        font-size: 1.5rem;
+    }
+    
+    .habit-card .habit-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .habit-card li {
+        padding: 0.6rem 0;
+        padding-left: 1.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .habit-card li:hover {
+        padding-left: 2rem;
     }
     
     .centered-controls {
