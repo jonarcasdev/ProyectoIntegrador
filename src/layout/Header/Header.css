@@ -2,7 +2,7 @@
 header {
     background: linear-gradient(90deg, #000000 0%, #FC0848 100%);
     width: 100%;
-    height: 100px; /* Tamaño inicial más grande */
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,61 +12,67 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
-    transition: height 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    transition: height 0.3s ease, background-color 0.3s ease;
 }
 
 /* Tamaño reducido del header */
 header.scrolled {
-    height: 55px; /* Tamaño reducido */
-    background: linear-gradient(90deg, #000000 0%, #FC0848 100%); /* Cambia el fondo opcionalmente */
+    height: 55px;
+    background: linear-gradient(90deg, #000000 0%, #FC0848 100%);
 }
-    
+
 .logo {
     display: flex;
     align-items: center;
-    height: 100%; /* Ocupa toda la altura del header */
+    height: 100%;
 }
 
+/* Logo de imagen */
 .logo-img {
-    height: 200px;
+    height: 180px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.6));
+    transition: height 0.3s ease;
 }
 
 
+/* Ajuste del logo al hacer scroll */
+header.scrolled .logo-img {
+    height: 45px;
+}
 
+/* Logo de texto (si se usa en lugar de imagen) */
 .logo {
-    font-size: 50px; /* Ajusta el tamaño del texto */
-    font-weight: bold; /* Haz el texto más grueso */
-    color: #ffffff; /* Cambia el color del texto */
-    margin: 0; /* Elimina márgenes adicionales */
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
     font-family: "Jersey 25", sans-serif;
 }
 
 nav {
-    display: flex; /* Usa flexbox para alinear los enlaces */
-    gap: 40px; /* Espacia los enlaces */
+    display: flex;
+    gap: 40px;
 }
 
-/* Nuevo contenedor para nav y auth-buttons */
 .nav-container {
     display: flex;
     align-items: center;
-    gap: 350px; /* Espacio entre el menú y los botones */
+    gap: 350px;
 }
 
 nav a {
-    position: relative; /* Asegúrate de que esta propiedad esté presente */
+    position: relative;
     font-size: 21px;
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;
-    display: inline-block; /* Para que el ancho se ajuste al texto */
+    display: inline-block;
 }
 
 nav a:hover {
-    color: #e1e1e1; /* Cambia el color al pasar el mouse */
+    color: #e1e1e1;
 }
 
 nav a::after {
@@ -75,40 +81,37 @@ nav a::after {
     width: 0;
     height: 2px;
     bottom: -4px;
-    left: 0; /* Comienza desde la izquierda */
-    right: 0; /* Termina en la derecha */
-    margin: 0 auto; /* Centra la línea */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     background-color: #ffffff;
     transition: width 0.3s ease;
 }
 
 nav a:hover::after {
-    width: 100%; /* La línea ocupa todo el ancho al hacer hover */
+    width: 100%;
 }
 
-
-/* Estilo del contenedor del menú desplegable */
+/* Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Estilo del menú desplegable */
 .dropdown-menu {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: absolute;
-    top: 100%; /* Aparece debajo del enlace */
+    top: 100%;
     left: 0;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px 0;
     z-index: 20;
-    min-width: 150px; /* Hace el dropdown más ancho */
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    min-width: 150px;
+    white-space: nowrap;
 }
 
-/* Estilo de los enlaces dentro del menú */
 .dropdown-menu a {
     display: block;
     padding: 10px 20px;
@@ -118,20 +121,17 @@ nav a:hover::after {
     transition: background-color 0.3s ease;
 }
 
-/* Cambia el color al pasar el mouse */
 .dropdown-menu a:hover {
     color: #FC0848;
 }
 
-/* Mostrar el menú al pasar el mouse sobre el contenedor */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Estilo para los enlaces dentro del dropdown menu */
 .dropdown-menu a {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    color: #333; /* Color del texto dentro del dropdown */
+    position: relative;
+    color: #333;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -139,35 +139,32 @@ nav a:hover::after {
 }
 
 .dropdown-menu a:hover {
-    color: #FC0848; /* Cambia el color al pasar el mouse */
+    color: #FC0848;
 }
 
-/* Efecto de línea que se expande al hacer hover */
 .dropdown-menu a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 5px; /* Posición ajustada para el dropdown */
-    left: 0; /* Comienza desde la izquierda */
-    right: 0; /* Termina en la derecha */
-    margin: 0 auto; /* Centra la línea */
-    background-color: #FC0848; /* Color que combine con tu tema */
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #FC0848;
     transition: width 0.3s ease;
 }
 
 .dropdown-menu a:hover::after {
-    width: 80%; /* La línea ocupa el 80% del ancho al hacer hover */
+    width: 80%;
 }
 
-/* Contenedor de los botones de autenticación */
 .auth-buttons {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-/* Estilo base para los botones de autenticación */
 .auth-buttons a {
     padding: 8px 16px;
     border-radius: 5px;
@@ -179,21 +176,17 @@ nav a:hover::after {
     display: inline-block;
 }
 
-/* Botón de Iniciar sesión - estilo outline */
 .login-btn {
     color: #000000 !important;
-
     background-color: white;
-    border: none; 
-    
-    outline: none; 
+    border: none;
+    outline: none;
 }
 
 .login-btn:hover {
     background-color: #ffffff;
     color: #000000 !important;
     transform: translateY(-2px);
-    
 }
 
 .login-btn:focus {
@@ -201,9 +194,6 @@ nav a:hover::after {
     box-shadow: none !important;
     border: none !important;
 }
-
-
-
 
 .user-avatar-container {
     position: relative;
@@ -237,7 +227,6 @@ nav a:hover::after {
     overflow: hidden;
 }
 
-/* Reutiliza estilo de enlaces como en .dropdown-menu a */
 .user-menu a,
 .user-menu button {
     display: block;
@@ -254,7 +243,6 @@ nav a:hover::after {
     transition: color 0.3s ease;
 }
 
-/* Línea roja al hacer hover */
 .user-menu a::after,
 .user-menu button::after {
     content: '';
@@ -269,7 +257,6 @@ nav a:hover::after {
     transition: width 0.3s ease;
 }
 
-/* Hover efecto */
 .user-menu a:hover,
 .user-menu button:hover {
     color: #FC0848;
@@ -280,23 +267,6 @@ nav a:hover::after {
     width: 80%;
 }
 
-
-/* Avatar circular */
-.user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.user-avatar:hover {
-    transform: scale(1.05);
-}
-
-/* Menú desplegable del usuario usa .dropdown-menu existente */
 .dropdown-menu button {
     background: none;
     border: none;
@@ -313,4 +283,3 @@ nav a:hover::after {
     background-color: #f0f0f0;
     color: #FC0848;
 }
-
