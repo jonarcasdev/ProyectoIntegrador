@@ -83,7 +83,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <li>© Derechos reservados</li>
+                    <li>©️ Derechos reservados</li>
                     <div className="footer-icons">
                         <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="icon-link">
                             <img src={tiktokIcon} alt="TikTok" className="social-icon" />

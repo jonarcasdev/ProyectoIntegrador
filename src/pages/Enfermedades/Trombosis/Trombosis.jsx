@@ -2,7 +2,7 @@ import "./Trombosis.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, KeyboardControls, Environment } from "@react-three/drei";
 
-import VideoMesh from "../../../../public/video/Videotrombosis.jsx";
+import VideoMesh from "../../videos/Videotrombosis.jsx";
 import Heart1 from "../../models3d/Heart1";
 import Heart1C from "../../models3d/Heart1C";
 import { useRef, useState } from "react";
