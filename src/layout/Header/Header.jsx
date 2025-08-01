@@ -80,7 +80,7 @@ const Header = () => {
     <header>
       <div className="logo">
         <a href="/">
-          <img src="/medvoxel-logo.png" alt="Medvoxel Logo" className="logo-img" />
+          <h1>MedVoxel</h1>
         </a>
       </div>
       <div className="nav-container">
@@ -95,7 +95,7 @@ const Header = () => {
             </div>
           </div>
           <a href="/quiz">Quiz</a>
-          <a href="/sobre-nosotros">Sobre nosotros</a>
+          <a href="/about">Sobre nosotros</a>
         </nav>
         <div className="auth-buttons">
           {!user ? (

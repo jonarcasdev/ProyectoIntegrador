@@ -27,30 +27,24 @@ header.scrolled {
     height: 100%;
 }
 
-/* Logo de imagen */
-.logo-img {
-    height: 120px;
-    width: auto;
-    object-fit: contain;
-    filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.6));
-    pointer-events: none; /* Evita que se pueda arrastrar o seleccionar */
-    user-select: none;
-  }
-  
-
-
-/* Ajuste del logo al hacer scroll */
-/* header.scrolled .logo-img {
-  height: 45px;
-} */
-
-/* Logo de texto (si se usa en lugar de imagen) */
-.logo {
-    font-size: 50px;
-    font-weight: bold;
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
-    font-family: "Jersey 25", sans-serif;
+    font-family: "League Spartan", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: font-size 0.3s ease;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ajuste del logo al hacer scroll */
+header.scrolled .logo h1 {
+    font-size: 1.8rem;
 }
 
 nav {

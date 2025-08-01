@@ -7,7 +7,7 @@ import Heart2 from "../../models3d/Heart2";
 import Heart2afa from "../../models3d/Heart2afa";
 import Heart3afa from "../../models3d/Heart3afa";
 import Heart4afa from "../../models3d/Heart4afa";
-import AfaVid from "../../videos/AfaVid";
+import AfaVid from "../../videos/afavid";
 
 import Lights2afa from "../../../lights/lights2afa";
 import Lights3afa from "../../../lights/lights3afa";
@@ -21,7 +21,7 @@ const VideoPlane = () => {
 
   useEffect(() => {
     const video = videoRef.current;
-    video.src = "/videos/afavid.mp4";
+    video.src = "/videos/AfaVid.mp4";
     video.crossOrigin = "anonymous";
     video.loop = true;
     video.muted = true;
