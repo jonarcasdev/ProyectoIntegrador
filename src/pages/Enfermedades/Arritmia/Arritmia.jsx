@@ -6,7 +6,6 @@ import Heart4 from "../../models3d/Heart4";
 import Heart2_1 from "../../models3d/Heart2_1";
 import Heart4_3 from "../../models3d/Heart4_3";
 import Heart4_4 from "../../models3d/Heart4_4";
-import LuisVid from "../../videos/luisvid";
 
 const Arritmia = () => {
   const leerMas = useRef(null);
@@ -152,14 +151,20 @@ const Arritmia = () => {
       </div>
 
       {/* Video informativo */}
-      <div style={{ margin: "0 0 10px 0" }}>
-        <Canvas camera={{ position: [0, 0, 5] }} style={{ height: "400px", width: "100%" }}>
-          <ambientLight intensity={0.7} />
-          <directionalLight position={[5, 5, 10]} intensity={1} />
-          <Stars />
-          <LuisVid />
-          <OrbitControls enableZoom={true} />
-        </Canvas>
+      <div style={{ margin: "0 0 40px 0" }}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <video
+            src="/videos/luisvid.mp4"
+            controls
+            style={{
+              width: "90%",
+              maxWidth: "800px",
+              borderRadius: "16px",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+              backgroundColor: "#000",
+            }}
+          />
+        </div>
         <div style={{ textAlign: "center", marginTop: "10px", fontWeight: "bold" }}>
           Video explicativo: LuisVid
         </div>
