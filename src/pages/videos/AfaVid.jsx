@@ -13,6 +13,6 @@ const  AfaVid= () => {
 	  <meshBasicMaterial map={texture} toneMapped={false} />
 	</mesh>
   );
-};
+}; 
 
 export default AfaVid;
