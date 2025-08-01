@@ -1,42 +1,40 @@
-h1{
+h1 {
     color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .cardHiper {
     background-color: #ffffff;
     border-radius: 30px;
-    padding: 100px; /* Increased padding */
-    width: 500px; /* Further increased width */
-    font-size: 24px; /* Slightly increased font size */
+    padding: 60px; /* Reducido para evitar exceso de altura */
+    width: 500px;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cuadroHiper,
+.cuadroAzulHiper {
+    width: 100%;
+    height: auto; /* Cambiado de 600px fijo a auto */
+    padding: 60px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuadroHiper {
-    background-color: #FC0848; /* Color de fondo */
-    width: 100%; /* Ancho del cuadro */
-    height: 600px; /* Alto del cuadro */
-    color: #ffffff; /* Color del texto dentro del cuadro */
-    font-size: 18px; /* Tamaño del texto */
-    font-weight: bold; /* Texto en negrita */
-    position: relative;
-    overflow: hidden;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    background-color: #FC0848;
 }
 
 .cuadroAzulHiper {
-    background-color: #476C8B; /* Color de fondo */
-    width: 100%; /* Ancho del cuadro */
-    height: 600px; /* Alto del cuadro */
-    color: #ffffff; /* Color del texto dentro del cuadro */
-    font-size: 18px; /* Tamaño del texto */
-    font-weight: bold; /* Texto en negrita */
-    position: relative;
-    overflow: hidden;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-
+    background-color: #476C8B;
 }
+
