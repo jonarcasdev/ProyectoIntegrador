@@ -29,18 +29,20 @@ header.scrolled {
 
 /* Logo de imagen */
 .logo-img {
-    height: 180px;
+    height: 120px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.6));
-    transition: height 0.3s ease;
-}
+    pointer-events: none; /* Evita que se pueda arrastrar o seleccionar */
+    user-select: none;
+  }
+  
 
 
 /* Ajuste del logo al hacer scroll */
-header.scrolled .logo-img {
-    height: 45px;
-}
+/* header.scrolled .logo-img {
+  height: 45px;
+} */
 
 /* Logo de texto (si se usa en lugar de imagen) */
 .logo {

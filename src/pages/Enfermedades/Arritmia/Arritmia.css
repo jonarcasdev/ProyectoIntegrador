@@ -1,148 +1,176 @@
-/* Fuente general */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
-
-
-/* Animación de fondo */
-@keyframes fondoAnimado {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.arritmia-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d1d1d;
+  background-color: #f5f8fa;
 }
 
-/* Títulos generales */
-h2, h3 {
+.arritmia-title {
   text-align: center;
-  margin: 2rem 0 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   color: #1d3557;
-  font-weight: 800;
+  margin-bottom: 2rem;
 }
 
-h2 {
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+.arritmia-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
-h3 {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+.arritmia-buttons button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #457b9d;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Textos generales */
-p {
-  max-width: 800px;
-  margin: 0 auto 1rem;
-  font-size: 1.05rem;
-  padding: 0 1rem;
-  color: #343a40; /* General (fondo oscuro) */
+.arritmia-buttons button:hover {
+  background-color: #1d3557;
 }
 
-/* Secciones con fondo claro */
-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 2rem 1rem;
-  margin: 2rem auto;
-  max-width: 960px;
-}
-
-/* Textos dentro de las secciones en oscuro */
-section p {
-  color: #1d1d1f;
-  font-weight: 500;
-}
-
-/* Contenedor del modelo 3D */
-.arritmia-modelo {
-  width: 100%;
-  max-width: 520px;
-  height: 360px;
-  margin: 2rem auto;
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid #dee2e6;
-}
-
-/* Texto flotante sobre el modelo */
-.texto-flotante-3d {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  pointer-events: none;
-  z-index: 20;
-  animation: flotar 4s ease-in-out infinite;
-  line-height: 1.4;
-  padding: 0 1rem;
-  width: 100%;
-  max-width: 480px;
-}
-
-/* Texto principal animado */
-.texto-principal {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: 800;
-  color: #e63946;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-  animation: latido 1.8s infinite;
-}
-
-/* Texto secundario debajo del título */
-.texto-secundario {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  color: #1d3557;
-  margin-top: 8px;
-  font-weight: 500;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-}
-
-/* Botones activos */
 .arritmia-buttons button.activo {
   background-color: #e63946;
+}
+
+.modelo-y-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.arritmia-mensaje-externo {
+  background-color: #e8f0fe;
+  color: #1d3557;
+  padding: 1rem;
+  border-left: 6px solid #457b9d;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.arritmia-modelo {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.texto-flotante-3d {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   color: #ffffff;
-  font-weight: 600;
-  box-shadow: 0 6px 12px rgba(230, 57, 70, 0.6);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  padding: 0.75rem 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.texto-flotante-3d .texto-principal {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.texto-flotante-3d .texto-secundario {
   font-size: 1rem;
-  letter-spacing: 0.5px;
-  border: none;
 }
 
-/* Animaciones */
+.arritmia-info-box-externo {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1rem;
+  border-left: 6px solid #ffc107;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.arritmia-info {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.arritmia-info section {
+  margin-bottom: 1.5rem;
+}
+
+.arritmia-info h2 {
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.arritmia-info p,
+.arritmia-info ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.arritmia-info ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.arritmia-video3d {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #e8f5e9;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.arritmia-video3d h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+canvas {
+  border-radius: 12px;
+  width: 100% !important;
+  height: auto !important;
+}
 @keyframes latido {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+  0% { transform: scale(1); }
+  25% { transform: scale(1.08); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.08); }
+  100% { transform: scale(1); }
 }
 
-@keyframes flotar {
-  0%, 100% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
-  50% {
-    transform: translate(-50%, -50%) translateY(-10px);
-  }
+.texto-flotante-3d .texto-principal {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: latido 1.5s infinite ease-in-out;
 }
 
-/* Responsive mejoras */
-@media (max-width: 768px) {
-  .arritmia-modelo {
-    height: 300px;
-  }
+.texto-flotante-3d .texto-secundario {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
 
-  .texto-flotante-3d {
-    font-size: 0.95rem;
-  }
-
-  .texto-principal {
-    font-size: 1.8rem;
-  }
-
-  .texto-secundario {
-    font-size: 1.05rem;
-  }
+.texto-flotante-3d .texto-secundario {
+  font-size: 1rem;
+  animation: parpadeo 2s infinite;
 }
