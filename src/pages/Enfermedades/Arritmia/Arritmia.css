@@ -1,0 +1,128 @@
+/* Estilo global */
+.arritmia-container {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #E0E7FF, #A7C7E7); /* Gradiente suave y elegante */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+
+  .canvas-container {
+    width: 100%;
+    height: 500px; /* Ajusta este valor a lo que necesites */
+    background-color: white; /* Si deseas cambiarlo o eliminarlo */
+}
+  
+  /* Estilo del título */
+  .arritmia-title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #2d3a4b;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo de la información emergente */
+  .arritmia-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    z-index: 10;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .arritmia-info br {
+    margin: 5px 0;
+  }
+  
+  /* Animación de pulso sutil para el mensaje emergente */
+  .arritmia-info:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Estilo del contenedor del canvas */
+  .arritmia-canvas-container {
+    width: 100%;
+    max-width: 1000px; /* Limitar el ancho máximo del contenedor */
+    height: 600px; /* Tamaño fijo para asegurar que el canvas no se vea pequeño */
+    margin: 50px 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border: 1px solid #A7C7E7;
+    transition: transform 0.3s ease;
+  }
+  
+  .arritmia-canvas-container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo para los cuadros de contenido */
+  .arritmia-cuadro {
+    margin-top: 60px;
+    width: 80%;
+    max-width: 950px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .arritmia-cuadro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cuadro azul */
+  .arritmia-cuadro-azul {
+    background-color: rgba(167, 199, 231, 0.9);
+    border-left: 8px solid #7B9DCE;
+  }
+  
+  /* Estilo de la tarjeta con contenido */
+  .arritmia-card {
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #B5D6FF, #8ABFFF); /* Gradiente suave */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .arritmia-card h2 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .arritmia-card p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+  }
+  
+  /* Efecto hover en las tarjetas */
+  .arritmia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  

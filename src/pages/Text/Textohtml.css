@@ -1,0 +1,15 @@
+
+.card {
+    height: fit-content;
+    width: 350px;
+    backdrop-filter: blur(18px) saturate(176%);
+    -webkit-backdrop-filter: blur(18px) saturate(176%);
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.card p {
+    font-size: 1.7em;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.2    ;
+}

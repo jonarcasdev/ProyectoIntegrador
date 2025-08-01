@@ -1,0 +1,259 @@
+.home {
+    background: linear-gradient(90deg, #000000 0%, #FC0848 100%);
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+}
+
+
+.bienvenida {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+ 
+  .bienvenida h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .bienvenida p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+.canvas-container {
+    width: 100%;
+    height: 400px; /* Ajusta este valor a lo que necesites */
+    background-color: white; /* Si deseas cambiarlo o eliminarlo */
+}
+
+
+.cuadro {
+    background-color: #302f2f;
+    width: 100%;
+    height: 900px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 95px;
+}
+
+.cuadro2 {
+    background-color: #FC0848;
+    width: 100%;
+    height: 768px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.virus {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 1200px;
+    height: auto;
+    pointer-events: none;
+    animation: float 8s ease-in-out infinite;
+}
+
+.inicio {
+    margin-top: 100px;
+}
+
+.buttom-inicio {
+    background-color: #FC0848;
+}
+.buttom-inicio:hover {
+    background-color: #d0073a;
+}
+
+.enfermedades-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.enfermedades-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.enfermedades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+    margin-top: 150px;
+
+    /* Corrección: fuerza las tarjetas a alinearse verticalmente */
+    align-items: stretch;
+}
+
+.card {
+    /* Corrección: alinea contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    transform-origin: center;
+    height: 100%; /* Asegura altura uniforme */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.enfermedades-grid:hover .card:not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Corrección: hace que el párrafo llene el espacio */
+}
+
+.card-button {
+    background-color: #fc0848;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Corrección: centra el botón horizontalmente */
+    align-self: center;
+}
+
+.card-button:hover {
+    background-color: #d0073a;
+}
+
+.scroll-button {
+    background-color: #FC0848;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+.scroll-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.scroll-button:hover {
+    background-color: #d0073a;
+}
+
+/* Animación para la imagen del virus */
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(-52%, -48%) rotate(2deg) scale(1.01);
+    }
+    50% {
+        transform: translate(-50%, -52%) rotate(0deg) scale(1.02);
+    }
+    75% {
+        transform: translate(-48%, -50%) rotate(-2deg) scale(1.01);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+}
+
+.virus-small {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    pointer-events: none;
+    animation: float-alt 6s ease-in-out infinite;
+}
+
+.virus-small:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0.5s;
+}
+
+.virus-small:nth-child(2) {
+    top: 20%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.virus-small:nth-child(3) {
+    bottom: 15%;
+    left: 20%;
+    animation-delay: 1.5s;
+}
+
+.virus-small:nth-child(4) {
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+@keyframes float-alt {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+        transform: translate(10px, 15px) rotate(10deg);
+    }
+    66% {
+        transform: translate(-10px, 5px) rotate(-5deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
