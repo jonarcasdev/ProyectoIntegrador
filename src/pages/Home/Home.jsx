@@ -102,22 +102,7 @@ const Home = () => {
                   Saber más
                 </button>
               </div>
-              <div className="card">
-                <h2>Tumor cardiaco en mixoma auricular</h2>
-                <p>
-                  El mixoma auricular es el tumor cardíaco primario más común en adultos,
-                  y suele localizarse en la aurícula izquierda.
-                </p>
-                <button
-                  className="card-button"
-                  onClick={() => {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                    navigate("/enfermedades/tumor_cardiaco");
-                  }}
-                >
-                  Saber más
-                </button>
-              </div>
+            
               <div className="card">
                 <h2>Arritmia</h2>
                 <p>
